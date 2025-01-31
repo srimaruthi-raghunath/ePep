@@ -6,6 +6,9 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Navbar styles */
@@ -54,6 +57,7 @@
             padding: 20px;
             text-align: center;
             font-size: 14px;
+            margin-top: auto;
         }
 
         footer a {
