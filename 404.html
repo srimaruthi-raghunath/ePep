@@ -1,15 +1,15 @@
 <script>
-    var path = window.location.pathname;
+    var path = window.location.pathname.toLowerCase();
   
-    // Define the valid routes
+    // Define the valid routes and their corresponding files
     var routes = {
         "/home": "/index.html",
         "/privacy": "/privacy.html",
-        "/terms": "/terms-conditions.html",
+        "/terms": "/terms.html",
         "/aboutus": "/aboutus.html"
     };
   
-    // Redirect if the path exists in routes
+    // If the path exists in the routes, redirect
     if (routes[path]) {
         window.location.replace(routes[path]);
     } else {
