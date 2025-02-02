@@ -1,19 +1,26 @@
 <script>
-    var path = window.location.pathname.toLowerCase();
+    document.addEventListener("DOMContentLoaded", function () {
+        var path = window.location.pathname.toLowerCase();
   
-    // Define the valid routes and their corresponding files
-    var routes = {
-        "/home": "/index.html",
-        "/privacy": "/privacy.html",
-        "/terms": "/terms.html",
-        "/aboutus": "/aboutus.html"
-    };
+        // Define valid routes and their actual HTML files
+        var routes = {
+            "/home": "/index.html",
+            "/privacy": "/privacy.html",
+            "/terms": "/terms.html",
+            "/aboutus": "/aboutus.html"
+        };
   
-    // If the path exists in the routes, redirect
-    if (routes[path]) {
-        window.location.replace(routes[path]);
-    } else {
-        document.body.innerHTML = "<h1>404 - Page Not Found</h1><p>The page you are looking for doesn't exist.</p>";
-    }
+        // Redirect if the path exists in the routes object
+        if (routes[path]) {
+            window.location.replace(routes[path]);
+        } else {
+            // Show a custom 404 message if the path is not found
+            document.body.innerHTML = `
+                <h1>404 - Page Not Found</h1>
+                <p>The page you are looking for doesn't exist.</p>
+                <a href="/home">Go to Home</a>
+            `;
+        }
+    });
   </script>
   
