@@ -7,11 +7,12 @@
     <link rel="icon" href="images/logo.png" type="images/png">
     <title>ePep.in</title>
     <script>
-        if (window.location.pathname === "/") {
-            // Redirect to /home only if not already there
-            window.history.replaceState({}, "", "/home");
+        // Check if the current URL contains "index.html"
+        if (window.location.pathname.toLowerCase() === "/index.html") {
+            window.location.replace("https://www.mysite.com");
         }
-      </script>      
+      </script>
+      
 </head>
 <body>
 
