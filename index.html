@@ -8,9 +8,10 @@
     <title>ePep.in</title>
     <script>
         if (window.location.pathname === "/") {
-            window.location.replace("/home");
+            // Redirect to /home only if not already there
+            window.history.replaceState({}, "", "/home");
         }
-      </script>
+      </script>      
 </head>
 <body>
 
