@@ -6,12 +6,31 @@
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="images/logo.png" type="images/png">
     <title>ePep.in</title>
-    <script>
+    <!-- <script>
         // Check if the current URL contains "index.html"
         if (window.location.pathname.toLowerCase() === "/index.html") {
             window.location.replace("https://www.epep.in");
         }
+      </script> -->
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var path = window.location.pathname.toLowerCase();
+      
+            // Define valid routes
+            var routes = {
+                "/privacy": "/privacy.html",
+                "/terms": "/terms.html",
+                "/aboutus": "/aboutus.html"
+            };
+      
+            // Redirect if the path exists in the routes object
+            if (routes[path]) {
+                window.location.replace(routes[path]);
+            }
+        });
       </script>
+      
       
 </head>
 <body>
