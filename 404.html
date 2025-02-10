@@ -1,3 +1,59 @@
+<html>
+<head>
+    <title>404 - Page Not Found</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var path = window.location.pathname.toLowerCase();
+            var routes = {
+                "/home": "https://www.epep.in",
+                "/privacy": "/privacy.html",
+                "/terms": "/terms.html",
+                "/aboutus": "/aboutus.html"
+            };
+
+            if (routes[path]) {
+                window.location.replace(routes[path]);
+            } else {
+                // Redirect users but let Google see the 404
+                document.body.innerHTML = "<h1>404 - Page Not Found</h1><p>Redirecting...</p>";
+                window.location.replace("https://www.epep.in");
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- For Users: You could hide this with CSS if you don't want them to see it -->
+    <h1>404 - Page Not Found</h1>
+    <p>The page you're looking for doesn't exist.</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         var path = window.location.pathname.toLowerCase();
@@ -19,4 +75,4 @@
         }
     });
   </script>
-  
+   -->
