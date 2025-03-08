@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: DESKTOP-VCASM82
+  name: Default
 
 steps:
 - task: ArchiveFiles@2
