@@ -1,0 +1,17 @@
+[build]
+  publish = "./"
+  command = ""
+
+[redirects]
+  # Redirect root domain to www
+  [[redirects]]
+    from = "https://epep.in/*"
+    to = "https://www.epep.in/:splat"
+    status = 301
+    force = true
+
+  # Redirect 404s to your custom 404.html
+  [[redirects]]
+    from = "/*"
+    to = "/404.html"
+    status = 404

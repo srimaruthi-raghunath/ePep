@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>404 - Page Not Found</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var path = window.location.pathname.toLowerCase();
+      
+            // Define valid routes and their actual HTML files
+            var routes = {
+                // "/home": "https://www.epep.in",
+                "/privacy": "/privacy.html",
+                "/terms": "/terms.html",
+                "/aboutus": "/aboutus.html"
+            };
+      
+            // Redirect if the path exists in the routes object
+            if (routes[path]) {
+                window.location.replace(routes[path]);
+            } else  {
+                // Automatically redirect user to home page if route is not found
+                window.location.replace("https://www.epep.in");
+            }
+        });
+      </script>
+</head>
+<body>
+    <!-- For Users: You could hide this with CSS if you don't want them to see it -->
+    <h1>404 - Page Not Found</h1>
+    <p>The page you're looking for doesn't exist.</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var path = window.location.pathname.toLowerCase();
+  
+        // Define valid routes and their actual HTML files
+        var routes = {
+            "/home": "https://www.epep.in",
+            "/privacy": "/privacy.html",
+            "/terms": "/terms.html",
+            "/aboutus": "/aboutus.html"
+        };
+  
+        // Redirect if the path exists in the routes object
+        if (routes[path]) {
+            window.location.replace(routes[path]);
+        } else  {
+            // Automatically redirect user to home page if route is not found
+            window.location.replace("https://www.epep.in");
+        }
+    });
+  </script>
+   -->
