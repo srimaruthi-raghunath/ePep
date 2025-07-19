@@ -2,13 +2,12 @@
   publish = "./"
   command = ""
 
-[redirects]
-  # Redirect root domain to www
-  [[redirects]]
-    from = "https://epep.in/*"
-    to = "https://www.epep.in/:splat"
-    status = 301
-    force = true
+# Redirect root domain to www
+[[redirects]]
+  from = "https://epep.in/*"
+  to = "https://www.epep.in/:splat"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/privacy"
@@ -25,9 +24,8 @@
   to = "/aboutus.html"
   status = 200
 
-# Already present — keep this at the end
+# SPA fallback or custom 404
 [[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404
-
