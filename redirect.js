@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     var path = window.location.pathname.toLowerCase();
+
+    // Avoid redirecting from the 404 page itself
+    if (window.location.pathname.includes("404.html")) {
+        return;
+    }
+
     var routes = {
         "/privacy": "/privacy.html",
         "/terms": "/terms.html",
@@ -9,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (routes[path]) {
         window.location.replace(routes[path]);
     } else {
-        // Optionally show a custom 404 message
-        document.body.innerHTML = "<h1>404 - Page Not Found</h1>";
+        // Only redirect to home if it's not already the homepage
+        if (path !== "/" && path !== "/index.html") {
+            window.location.replace("https://www.epep.in");
+        }
     }
 });
