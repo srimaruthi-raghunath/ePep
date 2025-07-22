@@ -1,10 +1,7 @@
-# Redirect naked domain to www
-https://epep.in/* https://www.epep.in/:splat 301
+# Redirect pretty URLs to corresponding HTML files
+/privacy   /privacy.html   200
+/terms     /terms.html     200
+/aboutus   /aboutus.html   200
 
-# Page-specific redirects (remove .html in URLs)
-/privacy /privacy.html 200
-/terms /terms.html 200
-/aboutus /aboutus.html 200
-
-# SPA-style fallback or custom 404
-/* /404.html 404
+# Redirect unknown paths to custom 404 page
+/*         /404.html       404
