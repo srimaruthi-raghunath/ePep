@@ -1,10 +1,10 @@
 # Redirect epep.in to www.epep.in
-https://epep.in/*    https://www.epep.in/:splat    301!
+https://epep.in/* https://www.epep.in/:splat 301!
 
 # Page-specific redirects
-/privacy            /privacy.html                 200
-/terms              /terms.html                   200
-/aboutus            /aboutus.html                 200
+/privacy /privacy.html 200
+/terms /terms.html 200
+/aboutus /aboutus.html 200
 
 # SPA-style fallback to custom 404
-/*                  /404.html                     404
+/* /404.html 404
