@@ -1,7 +1,12 @@
-# Redirect pretty URLs to corresponding HTML files
-/privacy   /privacy.html   200
-/terms     /terms.html     200
-/aboutus   /aboutus.html   200
+# Redirect root domain to www
+https://epep.in/* https://www.epep.in/:splat 301!
 
-# Redirect unknown paths to custom 404 page
-/*         /404.html       404
+# Route clean paths to actual HTML files
+/privacy     /privacy.html     200
+/terms       /terms.html       200
+/aboutus     /aboutus.html     200
+
+# Catch-all fallback for unmatched paths (for SPA or custom 404)
+# Note: Only uncomment this if you're *not* causing a loop with other rules
+# Otherwise handle 404s using custom HTML or JS fallback
+# /* /404.html 404
