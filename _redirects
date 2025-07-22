@@ -12,7 +12,7 @@
 # /* /404.html 404
 
 
-/privacy     /privacy.html     200
-/terms       /terms.html       200
-/aboutus     /aboutus.html     200
-
+/privacy /privacy.html 200
+/terms /terms.html 200
+/aboutus /aboutus.html 200
+/* /404.html 404
