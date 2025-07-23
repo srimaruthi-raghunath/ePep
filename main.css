@@ -80,28 +80,31 @@
             margin-bottom: 20px;
         } */
 
-        /* footer */
         footer {
-            background-color: #333;
-            color: grey;
-            padding: 20px;
-            text-align: center;
-            font-size: 14px;
-            margin-top: auto;
+          background-color: #111;
+          text-align: center;
+          padding: 20px;
+          border-top: 1px solid #333;
+          font-size: 14px;
+          margin-top: auto;
         }
-
-        footer a {
-            color: gray;
-            text-decoration: none;
+        
+        .footer-links {
+          margin-bottom: 8px;
         }
-
-        /* .sticky-footer{
-            position: sticky;
-            top: 100%;
-        } */
-
-        footer a:hover {
-            text-decoration: underline;
+        
+        .footer-links a {
+          color: #ccc;
+          text-decoration: none;
+          margin: 0 8px;
+        }
+        
+        .footer-links a:hover {
+          text-decoration: underline;
+        }
+        
+        .footer-copy {
+          color: #777;
         }
 
         /* Responsive Design */
