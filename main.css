@@ -9,6 +9,19 @@
             flex-direction: column;
         }
 
+        header {
+          background-color: #111;
+          padding: 20px 0;
+          text-align: center;
+          border-bottom: 1px solid #333;
+        }
+        
+        .brand {
+          color: #edd500;
+          font-size: 26px;
+          font-weight: bold;
+        }
+
         /* Navbar styles */
         nav {
             background-color: #333;
