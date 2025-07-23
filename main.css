@@ -10,32 +10,29 @@
         }
 
         header {
-/*           background-color: #111; */
-          padding: 20px 0;
+          background-color: #000000;
           text-align: center;
-          border-bottom: 1px solid #333;
+          padding: 10px;
+          font-size: 14px;
+          margin-top: auto;
         }
         
-        .brand {
+        .brand, .title_epep {
           color: #edd500;
-          font-size: 20px;
+          font-size: 15px;
           font-weight: bold;
         }
 
-        /* Navbar styles */
-        nav {
-            background-color: #333;
-            padding: 10px 0;
-            text-align: center;
+        /* Language Box */
+        .center-box {
+            padding: 5px 50px;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 8px;
+            font-size: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: auto;
         }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
 
         /* Heading Style */
         h1 {
@@ -94,7 +91,7 @@
         } */
 
         footer {
-          background-color: #111;
+          background-color: #000000;
           text-align: center;
           padding: 20px;
           border-top: 1px solid #333;
