@@ -51,13 +51,16 @@
 // }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const path = window.location.pathname.toLowerCase();
+    const path = window.location.pathname.toLowerCase();
 
-  // Allow root or clean path (e.g., /aboutus) to work without redirect
-  const allowedPaths = ["/", "/index.html", "/aboutus", "/privacy", "/terms"];
+    const routes = {
+        "/aboutus": "/aboutus.html",
+        "/privacy": "/privacy.html",
+        "/terms": "/terms.html"
+    };
 
-  if (!allowedPaths.includes(path)) {
-    // If it's not a known route, send to 404 page
-    window.location.replace("/404.html");
-  }
+    if (routes[path]) {
+        window.location.replace(routes[path]);
+    }
 });
+
