@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #6c6c6c;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #111;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.brand {
+  color: #edd500;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+.footer-links {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  color: #777;
+}
+
+/* Container style update */
+.container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+.image-link{
+    background-color:  white;
+}
+
+  /* Advertisement Space */
+  /* .ad-space {
+      width: 65%;
+      height: 200px;
+      background-color: #eaeaea;
+      text-align: center;
+      line-height: 100px;
+      font-size: 18px;
+      color: #333;
+      margin: auto;
+      margin-bottom: 20px;
+    } */
+
+/* Container style update */
+.container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+.container .image-link {
+    margin: 10px;
+    text-align: center;
+    width: 200px; /* Set a fixed width for each image container */
+    height: 100px; /* Set a fixed height for each image container */
+    overflow: hidden; /* Hide any overflow from images */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Fit all images inside the fixed-size box */
+.container .image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures images are fully contained within the box */
+    transition: transform 0.3s ease;
+}
+
+.container .image-link img:hover {
+    transform: scale(1.05);
+}
+
+#navfooter {
+  max-width: 1000;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.5;
+  line-height: 1.4;
+  text-align: left;
+  color: #f1f1f1;
+  background-color: #111; /* Optional dark background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+#navfooter {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+a[href] {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.epep_title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
