@@ -63,4 +63,3 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.replace(routes[path]);
     }
 });
-
