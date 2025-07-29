@@ -1,5 +1,5 @@
 # Redirect root domain to www
-# https://epep.in/* https://www.epep.in/:splat 301!
+https://epep.in/* https://www.epep.in/:splat 301!
 
 # Route clean paths to actual HTML files
 # /privacy     /privacy.html     200
