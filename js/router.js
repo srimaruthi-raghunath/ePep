@@ -1,18 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     const path = window.location.pathname.toLowerCase();
-
-//     const routes = {
-//         "/aboutus": "/aboutus.html",
-//         "/privacy": "/privacy.html",
-//         "/terms": "/terms.html"
-//     };
-
-//     if (routes[path]) {
-//         window.location.replace(routes[path]);
-//     }
-// });
-
-
 document.addEventListener("DOMContentLoaded", function () {
     function navigateTo(path) {
         history.pushState(null, null, path);
@@ -22,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     async function route() {
         const routes = {
             "/": "/pages/home.html",
-            "/index.html": "/pages/home.html", // Add this line
+            "/index.html": "/pages/home.html",
             "/aboutus": "/pages/aboutus.html",
             "/privacy": "/pages/privacy.html",
             "/terms": "/pages/terms.html"
