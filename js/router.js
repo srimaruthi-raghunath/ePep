@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     async function route() {
         const routes = {
             "/": "/pages/home.html",
+            "/index.html": "/pages/home.html", // Add this line
             "/aboutus": "/pages/aboutus.html",
             "/privacy": "/pages/privacy.html",
             "/terms": "/pages/terms.html"
