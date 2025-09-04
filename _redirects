@@ -21,4 +21,5 @@ https://epep.in/* https://www.epep.in/:splat 301!
 /privacy    /privacy.html    200
 /terms      /terms.html      200
 /*          /404.html        404
+/*    /index.html   200
 
