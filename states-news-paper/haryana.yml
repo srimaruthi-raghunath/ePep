@@ -1,0 +1,24 @@
+Hindi:
+  - name: "Hari Bhoomi"
+    original_name: "हरिभूमि"
+    url: "http://epaper.haribhoomi.com/"  # covers Rohtak edition & broader Haryana regions
+  - name: "Pathak Paksh"
+    original_name: "पाठक पक्ष"
+    url: "https://www.readwhere.com/newspaper/soochnaprinter/Daily-Pathakpaksh-News-paper/pathak-paksh/2230459"
+  - name: "Jagat Kranti"
+    original_name: "जगत क्रांति"
+    url: "http://www.jagatkranti.in/"
+  - name: "Dainik Savera"
+    original_name: "दैनिक सवेरा"
+    url: "<E‑paper URL via epaperlist; site lists editions covering Haryana>"
+  - name: "Human India"
+    original_name: "ह्युमन इंडिया"
+    url: "http://www.epaperhumanindia.in/"
+  - name: "Haryana Mail"
+    original_name: "हरियाणा मेल"
+    url: "http://www.haryanamail.in/"
+
+English:
+  - name: "The Tribune — Haryana Edition"
+    original_name: "The Tribune — Haryana Edition"
+    url: "https://epaper.tribuneindia.com/t/780"  # includes Haryana-specific edition

@@ -1,0 +1,56 @@
+
+---
+
+###  Summary of Top Gujarati e‑papers:
+
+| Rank | Newspaper              | Original Name (Gujarati) | Epaper URL                                               |
+|------|-------------------------|---------------------------|-----------------------------------------------------------|
+| 1    | Gujarat Samachar        | ગુજરાત સમાચાર            | http://epaper.gujarat-samachar.com/       Not working                    |
+| 2    | Divya Bhaskar           | દિવ્ય ભાસ્કર              | http://www.divyabhaskar.co.in/             not added                |
+| 3    | NavGujarat Samay        | નવગુજરાત સમય             | https://epaper.navgujaratsamay.com/      added              |
+| 4    | Sandesh                | સંદેશ                     | https://sandesh.com/epaper                 added                  |
+| 5    | Bombay Samachar        | બોમ્બે સમાચાર           | https://epaper.bombaysamachar.com/           added             |
+| 6    | Kutchmitra             | કચ્છમિત્રા                | http://www.kutchmitradaily.com/epaper.aspx   added             |
+| 7    | Phulchhab              | ફુલછબ                   | https://epaper.phulchhab.com/               added                       |
+| 8    | Akila Daily            | અકલ દૈનિક                | https://akilanews.com/epaper               added                        |
+| 9    | Janmabhoomi Pravasi    | જન્મભૂમિ પ્રવાસી          | http://epaper.janmabhoominewspapers.com/     added             |
+| 10   | Gujarat Mitra          | ગુજરાત મિટ્રા            | http://www.gujaratmitranews.com/epaper       Not working             |
+
+---
+
+Would you like me to continue similarly for other states—say, top 10 Tamil e‑papers, Bengali, or Telugu? Let me know which state or language you’d like next, and I'll follow the same format!
+::contentReference[oaicite:10]{index=10}
+
+
+
+Gujarati:
+  - name: "Gujarat Samachar"
+    original_name: "ગુજરાત સમાચાર"
+    url: "http://epaper.gujarat-samachar.com/"
+  - name: "Divya Bhaskar"
+    original_name: "દિવ્ય ભાસ્કર"
+    url: "http://www.divyabhaskar.co.in/"
+  - name: "NavGujarat Samay"
+    original_name: "નવગુજરાત સમય"
+    url: "https://epaper.navgujaratsamay.com/"
+  - name: "Sandesh"
+    original_name: "સંદેશ"
+    url: "https://epaperlist.com/?q=Sandesh"
+  - name: "Bombay Samachar"
+    original_name: "બોમ્બે સમાચાર"
+    url: "https://epaper.bombaysamachar.com/"
+  - name: "Kutchmitra"
+    original_name: "કચ્છમિત્રા"
+    url: "http://www.kutchmitradaily.com/epaper.aspx"
+  - name: "Phulchhab"
+    original_name: "ફુલછબ"
+    url: "http://www.phulchhab.com/epaper.aspx"
+  - name: "Akila Daily"
+    original_name: "અકલ દૈનિક"
+    url: "http://www.akila.in/epaper"
+  - name: "Janmabhoomi Pravasi"
+    original_name: "જન્મભૂમિ પ્રવાસી"
+    url: "http://epaper.janmabhoominewspapers.com/"
+  - name: "Gujarat Mitra"
+    original_name: "ગુજરાત મિટ્રા"
+    url: "http://www.gujaratmitranews.com/epaper"

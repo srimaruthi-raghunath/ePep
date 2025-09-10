@@ -6,85 +6,49 @@
     <link rel="stylesheet" href="styles/styleheet.css">
     <link rel="icon" href="images/logo.png" type="images/png">
     <title>
-        Daily Epaper in English, Hindi, Telugu, Tamil, Kannada, Malayalam, Marathi, Bengali, Gujarati, Punjabi, Urdu & More | ePep.in - All Indian Newspapers Online. ePep - Your Gateway to the Latest News & Education Updates.
+        ePep.in - All Indian news Epaper in English, Hindi, Telugu, Tamil, Kannada, Malayalam, Marathi, Bengali, Gujarati, Punjabi, panjab, odisha, karnataka, assam and more | ePep.in - All Indian Newspapers Online. ePep - Your Gateway to the Latest News & Education Updates
     </title>
     <meta name="description" content="Read daily epapers in English, Hindi, Telugu, Tamil, Kannada, Malayalam, Marathi, Bengali, Gujarati, Punjabi, Urdu and more. ePep.in is your one-stop platform for all Indian newspapers online. Stay informed with ePep, your trusted platform for accessing the latest news and educational updates. Explore a curated collection of newspapers and resources in one place.">
-    <meta name="keywords" content="news, education, newspapers, students, current affairs, latest news, morning electronic news, ePep">
+    <meta name="keywords" content="epaper, daily epaper, daily news, daily enews, news, education, newspapers, students, current affairs, latest news, morning electronic news, ePep.in, all epaper in english, all epaper in english Hindi, all epaper in english Telugu, all epaper in english Tamil, all epaper in english karnataka, all epaper in english assam, all epaper in english odusha, all epaper in english kerala, all epaper in english marathi, all epaper in english gujarati, all epaper in english panjab, all epaper in english bengali, all epaper in english malayalam, all epaper in english kannada, all indian newspapers online">
     <meta name="author" content="ePep Team">
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "ePep",
-          "url": "https://www.epep.in",
-          "description": "Stay informed with ePep, your trusted platform for accessing the latest news and educational updates.",
-          "publisher": {
-            "@type": "Organization",
-            "name": "ePep News",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://www.epep.in/images/logo.png"
-            }
-          },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://www.epep.in/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          },
-          "hasPart": [
-            {
-              "@type": "WebPage",
-              "url": "https://www.epep.in",
-              "name": "E-News Paper for English"
-            },
-            {
-              "@type": "WebPage",
-              "url": "https://www.epep.in",
-              "name": "E-News Paper for Telugu"
-            },
-            {
-              "@type": "WebPage",
-              "url": "https://www.epep.in",
-              "name": "E-News Paper for Telangana"
-            },
-            {
-              "@type": "WebPage",
-              "url": "https://www.epep.in",
-              "name": "E-News Paper for Andhra Pradesh"
-            },
-            {
-              "@type": "WebPage",
-              "url": "https://www.epep.in/aboutus",
-              "name": "About Us"
-            }
-          ]
-        }
+    <script>
+      fetch('schema-data.json')
+        .then(response => response.json())
+        .then(data => {
+          const script = document.createElement('script');
+          script.type = 'application/ld+json';
+          script.text = JSON.stringify(data);
+          document.head.appendChild(script);
+        })
+        .catch(error => {
+          console.error('Failed to load JSON-LD schema:', error);
+        });
     </script>
 
     <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-
 </head>
+
 <body>
-
         <div>
-          <header class="title_epep">
-            <h1 class="epep_title">
-              <a href="/" data-link style="text-decoration: none; color: inherit;">ePep.in</a>
-            </h1>
-          </header>
+            <header class="title_epep">
+              <!-- <h1 class="epep_title"> --> 
+                <a href="/" data-link style="text-decoration: none; color: inherit;">ePep.in</a>
+              <!-- </h1> -->
+              
+            </header>
         </div>
 
-<div id="content"></div>
-    <footer>
-        <div class="footer-links">
-            <a href="/aboutus" data-link>About Us</a> |
-            <a href="/privacy" data-link>Privacy Policy</a> |
-            <a href="/terms" data-link>Terms & Conditions</a>
-        </div>
-        <div class="footer-copy">
-            © 2025 ePep.in. All rights reserved.
-        </div>
-    </footer>
+        <div id="content"></div>
+          <footer>
+              <div class="footer-links">
+                  <a href="/aboutus" data-link>About Us</a> |
+                  <a href="/privacy" data-link>Privacy Policy</a> |
+                  <a href="/terms" data-link>Terms & Conditions</a>
+              </div>
+              <div class="footer-copy">
+                  © 2025 ePep.in. All rights reserved.
+              </div>
+          </footer>
 
 <script src="js/router.js"></script>
 </body>

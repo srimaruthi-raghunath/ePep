@@ -1,0 +1,33 @@
+Kannada:
+  - name: "Prajavani"
+    original_name: "ಪ್ರાજપವಣಿ"
+    url: "http://epaper.prajavani.net/"
+  - name: "Vijaya Karnataka"
+    original_name: "ವಿಜಯ ಕರ್ನಾಟಕ"
+    url: "http://www.vijaykarnatakaepaper.com/"
+  - name: "Kannada Prabha"
+    original_name: "ಕನ್ನಡ ಪ್ರಭ"
+    url: "https://www.kannadaprabha.com/"
+  - name: "Udayavani"
+    original_name: "ಉದಯವಾಣಿ"
+    url: "https://www.udayavani.com/epaper"  # widely available epaper link
+  - name: "Vijayavani"
+    original_name: "ವಿಜಯವಾಣಿ"
+    url: "http://epapervijayavani.in/"
+  - name: "Prajavani"
+    original_name: "ಪ್ರಜಾ ಪ್ರಗತಿ"
+    url: "http://epaper.samyukthakarnataka.com/"  # Samyukta Karnataka
+  - name: "Vishwavani"
+    original_name: "ವಿಶ್ವವಾಣಿ"
+    url: "http://epaper.vishwavani.news/"
+  - name: "Mysuru Mithra"
+    original_name: "ಮೈಸೂರು ಮಿತ್ರ"
+    url: "https://epaper.mysurumithra.com/"
+  - name: "Vartha Bharati"
+    original_name: "ವಾರ್ಥ ಭಾರತೀ"
+    url: "http://epaper.varthabharati.in/"
+
+English:
+  - name: "Deccan Herald"
+    original_name: "Deccan Herald"
+    url: "https://www.deccanheraldepaper.com/"

@@ -1,0 +1,27 @@
+Assamese:
+  - name: "Asomiya Pratidin"
+    original_name: "অসমীয়া প্ৰতিদিন"
+    url: "http://www.asomiyapratidin.in/"  # includes e‑paper editions
+  - name: "Amar Asom"
+    original_name: "আমাৰ অসম"
+    url: "http://amarasom.glpublications.in/"  # includes e‑paper access
+  - name: "Asomiya Khabar"
+    original_name: "অসমীয়া খবৰ"
+    url: "http://www.assamiyakhabor.com/"  # epaper available
+  - name: "Dainik Agradoot"
+    original_name: "দৈনিক অগ্ৰদূত"
+    url: "https://www.dainikagradoot.in/"  # website with online editions
+  - name: "Janasadharan"
+    original_name: "জানাসাধাৰণ"
+    url: "http://janasadharan.com/"  # includes digital access
+  - name: "Dainik Asam"
+    original_name: "দৈনিক অসম"
+    url: "https://epaper.assamtribune.com/"  # accessible via Assam Tribune portal
+
+English:
+  - name: "The Assam Tribune"
+    original_name: "The Assam Tribune"
+    url: "https://epaper.assamtribune.com/"  # official epaper site with subscription
+  - name: "The Sentinel"
+    original_name: "The Sentinel"
+    url: "http://www.sentinelassam.com/"  # online edition site

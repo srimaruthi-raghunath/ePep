@@ -1,4 +1,4 @@
-        /* General styles */
+        /* epep.in css styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -9,29 +9,33 @@
             flex-direction: column;
         }
 
+        /* top header colour black with padding */
         header {
           background-color: #000000;
           text-align: center;
-          padding: 10px;
+          padding: 25px;
           font-size: 14px;
           margin-top: auto;
         }
         
+        /* brand logo */
         .brand, .title_epep {
           color: #edd500;
-          font-size: 15px;
+          font-size: 30px;
           font-weight: bold;
+          text-decoration: none; 
+          /* color: inherit; */
         }
 
         /* Heading Style */
-        h1 {
+        /* h1 {
             text-align: center;
             margin-top: 20px;
-        }
+        } */
 
         /* Container style update */
         .container {
-            width: 70%;
+            width: 65%;
             display: flex;
             justify-content: center;
             flex-direction: row;
@@ -40,45 +44,184 @@
             margin: auto;
         }
 
-        .image-link{
-            background-color:  white;
+        /* Language box */
+        .language-box {
+            width:120px;
+            margin:20px auto 10px auto;
+            padding:8px 0;
+            background:#adadad;
+            border-radius:8px;
+            text-align:center;
+            font-weight:bold;
+            border: 2px solid #6f6f6f;
         }
 
-        .container .image-link {
-            margin: 10px;
-            text-align: center;
-            width: 200px; /* Set a fixed width for each image container */
-            height: 100px; /* Set a fixed height for each image container */
-            overflow: hidden; /* Hide any overflow from images */
+        /* Card's for all epapers icon*/
+        .news-card {
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            margin: 1px;
+            padding: 10px;
+            background: #fcfcfc;
+            border-radius: 10px;
+            text-align: center; /* Center text horizontally */
+            font-weight: bold;
+            color: #222;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            transition: box-shadow 0.2s;
             border: 2px solid #ddd;
-            border-radius: 8px;
+            overflow: hidden;
+            vertical-align: middle;
+            display: flex;
+            align-items: center;    /* Center vertically */
+            justify-content: center;/* Center horizontally */
         }
 
-        /* Fit all images inside the fixed-size box */
-        .container .image-link img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* Ensures images are fully contained within the box */
-            transition: transform 0.3s ease;
-        }
-
-        .container .image-link img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Advertisement Space */
-        /* .ad-space {
-            width: 65%;
-            height: 200px;
-            background-color: #eaeaea;
-            text-align: center;
-            line-height: 100px;
-            font-size: 18px;
-            color: #333;
-            margin: auto;
-            margin-bottom: 20px;
+        /* .news-card-text {
+            display: inline-block;
+            max-width: 160px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: 'Merriweather', 'Times New Roman', Times, serif;
+            font-size: 1.0em;
+            letter-spacing: 0.3px;
+            transition: transform 0.3s ease, color 0.2s;
         } */
 
+        /* news papaers cards text */
+        .news-card-text {
+            display: inline-block;
+            max-width: 160px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: 'Merriweather', 'Times New Roman', Times, serif;
+            /* font-size: 1.3.5em;
+            letter-spacing: 0.3px;
+            font-weight: 900 !important;  */
+            transition: transform 0.3s ease, color 0.2s;
+        }
+        
+        .news-card:hover .news-card-text {
+            transform: scale(1.09);
+            color: #0b5db6;
+        }
+
+        /* Fonts for each Alnguage */
+        /* English news cards: classic serif font */
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+        .english-news .news-card-text {
+            font-family: 'DM Serif Text', 'Times New Roman', Times, serif;
+            font-weight: 900;
+            font-size: 1em;
+            color: #222;
+        }
+
+        /* Hindi news cards: Google font "Noto Sans Devanagari" */
+        @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+        .hindi-news .news-card-text {
+            font-family: 'Rozha One', 'Noto Sans Devanagari', 'Mangal', 'Arial', sans-serif;
+            font-size: 1em;
+            color: #b41515;
+        }
+
+        /* Telugu news cards: Google font "Timmana Sans Telugu" */
+        @import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+        .telugu-news .news-card-text {
+            font-family: 'Timmana', 'Noto Sans Telugu', 'Arial', sans-serif;
+            font-size: 1.3em;
+            color: #0057b8;
+        }
+
+        /* Tamil news cards: Google font "Noto Sans Tamil" */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@700&display=swap');
+        .tamil-news .news-card-text {
+            font-family: 'Noto Sans Tamil', 'Arial', sans-serif;
+        }
+
+
+        /* colours for each language */
+        /* English news cards: black text */
+        .english-news .news-card-text {
+            color: #222;
+        }
+
+        /* Telugu news cards: blue text */
+        .telugu-news .news-card-text {
+            color: #0057b8;
+        }
+
+        /* Hindi news cards: red text */
+        .hindi-news .news-card-text {
+            color: #b41515;
+        }
+
+        /* tamil news cards: red text */
+        .tamil-news .news-card-text {
+            color: #c0a808;
+        }
+
+
+        /* marathi news cards: red text   */
+        .marathi-news .news-card-text {
+            color: #9e0cb1;
+        }
+
+        /* panjab news cards: red text   */
+        .panjab-news .news-card-text {
+            color: #20b415;
+        }
+
+        /* kerala news cards: red text   */
+        .kerala-news .news-card-text {
+            color: #6515b4;
+        }
+
+        /* gujarati news cards: red text   */
+        .gujarati-news .news-card-text {
+            color: #2596be;
+        }
+
+        /* assam news cards: red text   */
+        .assam-news .news-card-text {
+            color: #020608;
+        }
+
+        /* karnataka news cards: red text   */
+        .karnataka-news .news-card-text {
+            color: #e28743;
+        }
+
+        /* odisha news cards: red text   */
+        .odisha-news .news-card-text {
+            color: #B027F5;
+        }
+
+        /* Cards backgroun color for all alnguages */
+        /* English news cards: light tan */
+        /* .english-news .news-card {
+            background-color: #dcf5c8;
+        } */
+
+        /* Telugu news cards: light blue */
+        /* .telugu-news .news-card {
+            background-color: #f9f9f9;
+        } */
+
+        /* Hindi news cards: light yellow */
+        /* .hindi-news .news-card {
+            background-color: #e1ebff;
+        } */
+
+        /* Tamil news cards: light pink */
+        /* .tamil-news .news-card {
+            background-color: #ffe45e;
+        } */
+
+       /* Footer CSS */
         footer {
           background-color: #000000;
           text-align: center;
@@ -106,7 +249,7 @@
           color: #777;
         }
 
-        /* Responsive Design */
+        /* Responsive Design mobile*/
         @media (max-width: 1200px) {
             .container {
                 width: 90%; /* Adjust container width on medium devices */
@@ -129,11 +272,6 @@
             .container {
                 width: 90%; /* Adjust container width on small devices */
             }
-
-            .container .image-link {
-                width: 150px; /* Slightly smaller images on small screens */
-                height: 120px;
-            }
         }
 
         @media (max-width: 480px) {
@@ -147,19 +285,6 @@
                 font-size: 14px;
             }
 
-            .container {
-                width: 100%; /* Full width container on very small screens */
-            }
-
-            .container .image-link {
-                width: 120px; /* Even smaller images for very small screens */
-                height: 100px;
-            }
-
-            .ad-space {
-                height: 80px; /* Slightly smaller ad space */
-                font-size: 16px;
-            }
             .pry{
                 display: block;
                 margin: 5px 0; /* Stack links on very small screens */

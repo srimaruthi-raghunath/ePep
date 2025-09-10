@@ -1,0 +1,16 @@
+Punjabi:
+  - name: "Jag Bani"         added
+    original_name: "ਜਗ ਬਾਣੀ" 
+    url: "http://epaper.jagbani.com/"
+  - name: "Punjabi Tribune"     added
+    original_name: "ਪੰਜਾਬੀ ਟ੍ਰਿਬਿਊਨ"
+    url: "http://punjabitribuneonline.com/"
+  - name: "Nawan Zamana"   added
+    original_name: "ਨਵਾਂ ਜ਼ਮਾਨਾ"
+    url: "https://www.nawanzamana.in/"  # (Note: online edition site)
+  - name: "Daily Punjab Times" added
+    original_name: "ਡੇਅਲੀ ਪੰਜਾਬ ਟਾਈਮਜ਼"
+    url: "http://epaper.dailypunjabtimes.com/"
+  - name: "Rozana Spokesman"  added
+    original_name: "ਰੋਜ਼ਾਨਾ ਸਫ਼ਾਈਰਮੈਨ"  # approximate transliteration
+    url: "https://www.rozanaspokesman.com/epaper"

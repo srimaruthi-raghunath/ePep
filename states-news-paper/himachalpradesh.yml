@@ -1,0 +1,15 @@
+Hindi:
+  - name: "Divya Himachal"
+    original_name: "दिव्य हिमाचल"
+    url: "http://www.divyahimachal.com/"  # e‑paper available on site
+  - name: "Himachal Dastak"
+    original_name: "हिमाचल दस्तक"
+    url: "http://epapermathrubhumi.com/epaper-himachal-dastak.html"  # epaper portal
+  - name: "Punjab Kesari – Himachal Edition"
+    original_name: "पंजाब केसरी – हिमाचल संस्करण"
+    url: "https://epaper.punjabkesari.in/editions/himachal-pradesh"  # multiple district editions
+
+English/Hindi:
+  - name: "Himachal Tribune (The Tribune – Himachal Edition)"
+    original_name: "The Tribune – हिमाचल संस्करण"
+    url: "https://epaper.tribuneindia.com/t/39000"  # Himachal-specific epaper edition
