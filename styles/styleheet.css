@@ -260,19 +260,21 @@
         /* Mobile Phones */
         @media (max-width: 480px) {
             nav {
-                padding: 8px 0;
+                padding: 4px 0; /* Reduced vertical padding */
             }
 
             nav a,
             .pry {
                 display: block;
-                margin: 5px 0;
-                font-size: 14px;
+                margin: 3px 0; /* Less margin between links */
+                font-size: 12px; /* Smaller text size */
                 text-align: center;
             }
 
-            .container, .pry {
-                width: 95%;
+            .container,
+            .pry {
+                width: 98%; /* Almost full width */
+                padding: 0 5px; /* Optional: Add horizontal padding for breathing room */
             }
         }
         /* End of epep.in css styles */
