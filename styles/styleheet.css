@@ -230,49 +230,49 @@
 
         /* Responsive Design mobile*/ 
 
+        /* Base styles for large screens (desktop) */
+        .container, .pry {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Medium devices (Desktops & Tablets < 1200px) */
         @media (max-width: 1200px) {
-            .container {
-                width: 90%; /* Adjust container width on medium devices */
-            }
-            .pry{
-                width: 90%; /* Adjust container width on medium devices */
+            .container, .pry {
+                width: 90%;
             }
         }
 
-        /* For tablets (landscape & portrait) */
+        /* Tablets (portrait and landscape) */
         @media (max-width: 768px) {
-            nav a {
-                font-size: 16px; /* Smaller font size for small screens */
-                margin: 0 10px;
-            }
-            .pry{
-                font-size: 16px; /* Smaller font size for small screens */
+            nav a,
+            .pry {
+                font-size: 16px;
                 margin: 0 10px;
             }
 
-            .container {
-                width: 92%; /* Adjust container width on small devices */
+            .container, .pry {
+                width: 90%;
             }
         }
 
-        /* For mobile phones */
+        /* Mobile Phones */
         @media (max-width: 480px) {
             nav {
                 padding: 8px 0;
             }
 
-            nav a {
+            nav a,
+            .pry {
                 display: block;
-                margin: 5px 0; /* Stack links on very small screens */
+                margin: 5px 0;
                 font-size: 14px;
+                text-align: center;
             }
 
-            .pry{
-                display: block;
-                margin: 5px 0; /* Stack links on very small screens */
-                font-size: 14px;
-            }
             .container, .pry {
                 width: 95%;
             }
         }
+        /* End of epep.in css styles */
