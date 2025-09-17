@@ -53,7 +53,7 @@
         /* Card's for all epapers icon*/
         .news-card {
             display: inline-block;
-            width: 150px;
+            width: 170px;
             height: 50px;
             margin: 1px;
             padding: 10px;
@@ -73,7 +73,7 @@
             justify-content: center;/* Center horizontally */
         }
 
-        /* news papaers cards text */
+        /* news papers cards text */
         .news-card-text {
             display: inline-block;
             max-width: 160px;
@@ -103,7 +103,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
         .hindi-news .news-card-text {
             font-family: 'Rozha One', 'Noto Sans Devanagari', 'Mangal', 'Arial', sans-serif;
-            font-size: 1em;
+            font-size: 0.9em;
             color: #b41515;
         }
 
@@ -111,7 +111,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
         .telugu-news .news-card-text {
             font-family: 'Timmana', 'Noto Sans Telugu', 'Arial', sans-serif;
-            font-size: 1.3em;
+            font-size: 1em;
             color: #0057b8;
         }
 

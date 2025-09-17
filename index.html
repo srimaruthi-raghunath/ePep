@@ -6,25 +6,57 @@
     <link rel="stylesheet" href="styles/styleheet.css">
     <link rel="icon" href="images/logo.png" type="images/png">
     <title>
-        ePep.in - All Indian news Epaper in English, Hindi, Telugu, Tamil, Kannada, Malayalam, Marathi, Bengali, Gujarati, Punjabi, panjab, odisha, karnataka, assam and more | ePep.in - All Indian Newspapers Online. ePep - Your Gateway to the Latest News & Education Updates
+        ePep.in - Indian digital news Epaper in English, Hindi, Telugu, Tamil, Kannada, Malayalam, Marathi, Bengali, Gujarati, Punjabi, panjab, odisha, karnataka, assam and more | Your Gateway to the Latest News & Education Updates
     </title>
-    <meta name="description" content="Read daily epapers in English, Hindi, Telugu, Tamil, Kannada, Malayalam, Marathi, Bengali, Gujarati, Punjabi, Urdu and more. ePep.in is your one-stop platform for all Indian newspapers online. Stay informed with ePep, your trusted platform for accessing the latest news and educational updates. Explore a curated collection of newspapers and resources in one place.">
-    <meta name="keywords" content="epaper, daily epaper, daily news, daily enews, news, education, newspapers, students, current affairs, latest news, morning electronic news, ePep.in, all epaper in english, all epaper in english Hindi, all epaper in english Telugu, all epaper in english Tamil, all epaper in english karnataka, all epaper in english assam, all epaper in english odusha, all epaper in english kerala, all epaper in english marathi, all epaper in english gujarati, all epaper in english panjab, all epaper in english bengali, all epaper in english malayalam, all epaper in english kannada, all indian newspapers online">
+    <meta name="description" content="Read today digital news epapers, dailyepaer, The Hindu, Financial Express, Deccan Chronicle, Times India, Eenadu, Amar ujala, Dainik Bhaskar, Urdu and more. ePep.in is your one-stop platform for all Indian newspapers online. Stay informed with ePep, your trusted platform for accessing the latest news and educational updates. Explore a curated collection of newspapers and resources in one place.">
+    <meta name="keywords" content="dailyepaer, the Hans india, The Hindu, Times of now, TOI, epep.in, epep , daily epaper, daily news, daily enews, news, education, newspapers, students, current affairs, latest news, morning electronic news, ePep.in, all epaper in english, all epaper in english Hindi, all epaper in english Telugu, all epaper in english Tamil, all epaper in english karnataka, all epaper in english assam, all epaper in english odusha, all epaper in english kerala, all epaper in english marathi, all epaper in english gujarati, all epaper in english panjab, all epaper in english bengali, all epaper in english malayalam, all epaper in english kannada, all indian newspapers online">
     <meta name="author" content="ePep.in">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/view.js"></script>
-    <script>
-      fetch('schema-data.json')
+    <script src="js/slide.js"></script>
+    <!-- <script>
+    fetch('schema-data.json')
         .then(response => response.json())
         .then(data => {
-          const script = document.createElement('script');
-          script.type = 'application/ld+json';
-          script.text = JSON.stringify(data);
-          document.head.appendChild(script);
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(data);
+        document.head.appendChild(script);
         })
         .catch(error => {
-          console.error('Failed to load JSON-LD schema:', error);
+        console.error('Failed to load JSON-LD schema:', error);
         });
+    </script> -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Indian Newspapers Collection",
+    "url": "https://www.epep.in",
+    "description": "Browse a curated list of Indian digital newspapers dailyepaer, The Hindu, Financial Express, Deccan Chronicle, Times India, Eenadu, Amar ujala, Dainik Bhaskar, and more. also read in multiple languages including English, Hindi, Telugu, and more.",
+    "hasPart": [
+        {
+        "@type": "WebPage",
+        "name": "Amar Ujala",
+        "url": "https://www.amarujala.com"
+        },
+        {
+        "@type": "WebPage",
+        "name": "Divya Bhaskar",
+        "url": "https://www.divyabhaskar.co.in"
+        },
+        {
+        "@type": "WebPage",
+        "name": "Loksatta",
+        "url": "https://epaper.loksatta.com"
+        },
+        {
+        "@type": "WebPage",
+        "name": "Eenadu",
+        "url": "https://www.eenadu.net"
+        }
+    ]
+    }
     </script>
 
     <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
