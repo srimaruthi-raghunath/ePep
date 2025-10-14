@@ -1,4 +1,11 @@
         /* epep.in css styles */
+        /* General Styles */
+        @import 'responsive.css';
+        html {
+        scroll-behavior: smooth;
+        background: #f8fafc;
+        }
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -11,17 +18,16 @@
 
         /* top header colour black with padding */
         header {
-          background-color: #000000;
+          background-color: #6366f1;
           text-align: center;
-          padding: 20px;
-          font-size: 14px;
+          padding: 30px;
           margin-top: auto;
         }
         
         /* brand logo */
         .brand, .title_epep {
-          color: #edd500;
-          font-size: 30px;
+          color: #ffffff;
+          font-size: 50px;
           font-weight: bold;
           text-decoration: none; 
           /* color: inherit; */
@@ -40,14 +46,29 @@
 
         /* Language box */
         .language-box {
-            width:120px;
+            width:224px;
             margin:20px auto 10px auto;
             padding:8px 0;
-            background:#adadad;
-            border-radius:8px;
+            background:white;
+            border-radius:12px;
+            font-size: 1.125rem;
+            font-weight: 600;
             text-align:center;
             font-weight:bold;
-            border: 2px solid #6f6f6f;
+            border: 2px solid #2b2c55;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .language-box:hover {
+            background-color: #f0f9ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* lang-section will maintain the language-box in center */
+        .lang-section {
+        min-height: 10px;
+        margin-bottom: 10px;
+        text-align: center;
         }
 
         /* Card's for all epapers icon*/
@@ -228,51 +249,47 @@
           color: #777;
         }
 
-        /* Responsive Design mobile*/ 
+        /* Mobile and Responsive styles moved to separate file */
 
-        /* Base styles for large screens (desktop) */
-        .container, .pry {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
+        .main-intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 260px;
+            margin: 32px auto 20px auto;
+            padding: 36px 16px;
+            max-width: 660px;
+            background: #fffbe9;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
         }
 
-        /* Medium devices (Desktops & Tablets < 1200px) */
-        @media (max-width: 1200px) {
-            .container, .pry {
-                width: 90%;
-            }
+        .share-buttons {
+            display: flex;
+            gap: 12px;
+            margin: 18px auto 26px auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
-
-        /* Tablets (portrait and landscape) */
-        @media (max-width: 768px) {
-            nav a,
-            .pry {
-                font-size: 16px;
-                margin: 0 10px;
-            }
-
-            .container, .pry {
-                width: 90%;
-            }
+        .share-buttons a {
+            text-decoration: none;
+            padding: 6px 14px;
+            font-size: 1.15em;
+            border-radius: 6px;
+            font-weight: 600;
+            color: #fff;
+            background: #244379;
+            transition: background 0.18s;
         }
-
-        /* Mobile Phones */
-        @media (max-width: 480px) {
-            nav {
-                padding: 8px 0;
-            }
-
-            nav a {
-                display: block;
-                margin: 5px 0; /* Stack links on very small screens */
-                font-size: 14px;
-            }
-
-            .pry{
-                display: block;
-                margin: 5px 0; /* Stack links on very small screens */
-                font-size: 14px;
-            }
+        .share-buttons a[aria-label*='WhatsApp'] { background: #25D366; color: #fff; }
+        .share-buttons a[aria-label*='Telegram'] { background: #2AABEE; color: #fff; }
+        .share-buttons a[aria-label*='Facebook'] { background: #4267B2; color: #fff; }
+        .share-buttons a[aria-label*='Twitter'] { background: #1da1f2; color: #fff; }
+        .share-buttons a[aria-label*='LinkedIn'] { background: #0077b5; color: #fff; }
+        .share-buttons a:hover {
+            filter: brightness(1.09) saturate(1.2);
+            box-shadow: 0 2px 9px rgba(60,60,156,0.1);
         }
-        /* End of epep.in css styles */
