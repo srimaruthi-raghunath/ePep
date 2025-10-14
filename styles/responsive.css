@@ -1,0 +1,44 @@
+/* Responsive Design mobile*/ 
+
+/* Base styles for large screens (desktop) */
+.container, .pry {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Medium devices (Desktops & Tablets < 1200px) */
+@media (max-width: 1200px) {
+    .container, .pry {
+        width: 90%;
+    }
+}
+
+/* Tablets (portrait and landscape) */
+@media (max-width: 768px) {
+    nav a,
+    .pry {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    .container, .pry {
+        width: 90%;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    nav {
+        padding: 8px 0;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0; /* Stack links on very small screens */
+        font-size: 14px;
+    }
+    .pry{
+        display: block;
+        margin: 5px 0; /* Stack links on very small screens */
+        font-size: 14px;
+    }
+}
