@@ -33,6 +33,27 @@
           /* color: inherit; */
         }
 
+        /* apt about, privacy, terms */
+        .apt-name {
+            font-size: 0.9em;
+            color: #000000;
+            text-align: center;
+            justify-content: center;
+            line-height: 1.6;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        .apt-content {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            min-height: 260px;
+            margin: 32px auto 20px auto;
+            padding: 36px 16px;
+            max-width: 1600px;
+        }
+
         /* Container style update */
         .container {
             width: 65%;

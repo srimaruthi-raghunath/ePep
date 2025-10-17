@@ -17,20 +17,79 @@
 /* Tablets (portrait and landscape) */
 @media (max-width: 768px) {
     nav a,
+
+    .explore {
+        font-size: 0.8em;
+        padding: 10px 5px;
+        
+    }
+    .main-intro {
+        font-size: 0.7em;
+        padding: 10px 5px;
+    }
+
     .pry {
         font-size: 16px;
         margin: 0 10px;
     }
+
     .container, .pry {
         width: 90%;
     }
+
+    .news-card {
+    width: calc(46% - 1px) !important; /* Force 2 columns */
+    min-width: 40px !important;
+    max-width: calc(40% - 3px) !important; /* 46% for the card text to fit */
+    height: 50px;
+    margin: 1px 0;
+    padding: 3px 1px;
+    font-size: 0.8em;
+    flex: 0 0 calc(46% - 1px) !important;
+    }
+
+    .footer-links {
+        font-size: 11px;
+        height: auto;
+        padding: 6px 0;
+    }
+
+    .apt-name{
+        font-size: 10px;
+    }
+
+    .apt-content{
+        font-size: 12px;
+    }
 }
 
-/* Mobile Phones */
+/* Mobile Phones 480*/
 @media (max-width: 480px) {
     nav {
-        padding: 8px 0;
+    padding: 6px 0;
     }
+
+    .explore {
+        font-size: 0.8em;
+        padding: 10px 5px;
+
+    }
+    .main-intro {
+        font-size: 0.7em;
+        padding: 10px 5px;
+    }
+
+    .news-card {
+    width: calc(46% - 1px) !important; /* Force 2 columns */
+    min-width: 40px !important;
+    max-width: calc(40% - 3px) !important; /* 46% for the card text to fit */
+    height: 50px;
+    margin: 1px 0;
+    padding: 3px 1px;
+    font-size: 0.8em;
+    flex: 0 0 calc(46% - 1px) !important;
+    }
+
     nav a {
         display: block;
         margin: 5px 0; /* Stack links on very small screens */
@@ -40,5 +99,19 @@
         display: block;
         margin: 5px 0; /* Stack links on very small screens */
         font-size: 14px;
+    }
+
+    .footer-links {
+        font-size: 11px;
+        height: auto;
+        padding: 6px 0;
+    }
+
+    .apt-name{
+        font-size: 10px;
+    }
+
+    .apt-content{
+        font-size: 12px;
     }
 }
