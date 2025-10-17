@@ -68,9 +68,13 @@
     nav {
     padding: 6px 0;
     }
-
+    
+    .title_epep {
+        font-size: 1.8em;
+    }
+/* Explore Indian Newspapers by Language &amp; City */
     .explore {
-        font-size: 0.8em;
+        font-size: 0.6em;
         padding: 10px 5px;
 
     }
@@ -78,11 +82,11 @@
         font-size: 0.7em;
         padding: 10px 5px;
     }
-
+    /* news cards responsive */
     .news-card {
     width: calc(46% - 1px) !important; /* Force 2 columns */
-    min-width: 40px !important;
-    max-width: calc(40% - 3px) !important; /* 46% for the card text to fit */
+    min-width: 45px !important;
+    max-width: calc(45% - 3px) !important; /* 46% for the card text to fit */
     height: 50px;
     margin: 1px 0;
     padding: 3px 1px;
