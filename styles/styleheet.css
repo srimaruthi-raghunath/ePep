@@ -1,6 +1,7 @@
         /* epep.in css styles */
         /* General Styles */
         @import 'responsive.css';
+        @import 'whatsapp.css';
         html {
         scroll-behavior: smooth;
         background: #f8fafc;
@@ -14,12 +15,12 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            padding-top: 100px; /* same as nav height */
         }
 
         /* top header colour black with padding */
         header {
           background-color: #6366f1;
-          text-align: center;
           padding: 20px;
           margin-top: auto;
         }
@@ -30,10 +31,20 @@
           font-size: 50px;
           font-weight: bold;
           text-decoration: none; 
+          position: fixed; /* makes the nav stay in one place */
+          top: 0;          /* stick to the top */
+          left: 0;         /* align to left */
+          width: 100%;     /* full width of the page */
+          text-align: center;   /* centers the content */
           /* color: inherit; */
         }
 
-        /* apt about, privacy, terms */
+        /* Explore Today’s Indian ePapers  */
+        #homeContent {
+        font-size: 1.5em;
+        }
+
+        /* apt means about, privacy, terms */
         .apt-name {
             font-size: 0.9em;
             color: #000000;
@@ -52,6 +63,7 @@
             margin: 32px auto 20px auto;
             padding: 36px 16px;
             max-width: 1600px;
+            margin-top: -50px;
         }
 
         /* Container style update */

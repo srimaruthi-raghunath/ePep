@@ -16,9 +16,8 @@
 
 /* Tablets (portrait and landscape) */
 @media (max-width: 768px) {
-    nav a,
 
-    .explore {
+    #homeContent {
         font-size: 0.8em;
         padding: 10px 5px;
         
@@ -72,15 +71,21 @@
     .title_epep {
         font-size: 1.8em;
     }
+    
 /* Explore Indian Newspapers by Language &amp; City */
-    .explore {
-        font-size: 0.6em;
+    #homeContent {
+        font-size: 1em;
         padding: 10px 5px;
-
+    }
+    .explore {
+        font-size: 0.8em;
+        padding: 10px 5px;
+        margin-top: auto;
     }
     .main-intro {
         font-size: 0.7em;
         padding: 10px 5px;
+        margin-top: auto;
     }
     /* news cards responsive */
     .news-card {
@@ -117,5 +122,11 @@
 
     .apt-content{
         font-size: 12px;
+        margin-top: -50px;
+    }
+
+    /* whatsapp */
+    .whatsapp-float {
+        top: 80px;
     }
 }

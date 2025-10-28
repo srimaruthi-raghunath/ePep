@@ -27,6 +27,8 @@
     <script src="js/view.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/router.js"></script>
+    <script src="./js/whatsapp.js"></script>
+    <script src="./js/hideHome.js"></script>
     <title>
         ePep.in - Indian digital news Epaper in English, Hindi, Telugu, Tamil, Kannada, Malayalam, Marathi, Bengali, Gujarati, Punjabi, panjab, odisha, karnataka, assam and more | Your Gateway to the Latest News &amp; Education Updates | epep.in
     </title>
@@ -76,6 +78,7 @@
       }
     }
     </script>
+    <!-- Website site map in position in search -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -85,7 +88,25 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://epep.in/"
+          "item": "https://epep.in"
+        },
+        {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About Us",
+        "item": "https://epep.in/aboutus"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Privacy Policy",
+          "item": "https://epep.in/privacy"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Terms & Conditions",
+          "item": "https://epep.in/terms"
         }
       ]
     }
@@ -130,7 +151,7 @@
         "addressCountry": "IN"
       },
       "sameAs": [
-        "https://epep.in/"
+        "https://epep.in"
       ]
     }
     </script>
@@ -142,6 +163,12 @@
             <a href="/" data-link style="text-decoration: none; color: inherit;">ePep.in</a>
         </header>
     </div>
+
+    <!-- Explore  India news papers -->
+   <div id="homeContent">
+    <h1 style="text-align: center; font-size: 1.1em; margin-bottom: 0.2em;">Explore Today’s Indian ePapers & Newspapers by Language and City – ePep.in</h1>
+    <p style="text-align:center;margin:0 0 30px 0;font-size:0.8em;">epep.in Serving news readers in Delhi, Bangalore, Chennai, Kolkata, Hyderabad, Mumbai   and every Indian region!</p>
+  </div>
 
     <div id="content"></div>
     <footer>
@@ -155,6 +182,11 @@
             © 2025 ePep.in. All rights reserved.
         </div>
     </footer>
-    
+    <!-- Floating WhatsApp -->
+  <div class="whatsapp-float" id="whatsappFloat">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <span class="whatsapp-text">Join our WhatsApp Channel</span>
+    <button class="close-btn" onclick="closeWhatsApp()">×</button>
+  </div>  
 </body>
 </html>
