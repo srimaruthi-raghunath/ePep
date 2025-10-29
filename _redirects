@@ -1,9 +1,14 @@
-# Redirect root domain to www
-https://epep.in/* https://www.epep.in/:splat 301!
+# Redirect root domain to www (canonical)
+https://www.epep.in/* https://epep.in/:splat 301!
 
+# Clean URLs (no .html in browser)
+# Serve static HTML files for clean paths
 /aboutus    /aboutus.html    200
 /privacy    /privacy.html    200
 /terms      /terms.html      200
-/*          /404.html        404
+
+# Catch-all: serve index.html for SPA routes
 /*    /index.html   200
 
+# Optional: custom 404 page (will only trigger if file truly not found)
+/404    /404.html   404

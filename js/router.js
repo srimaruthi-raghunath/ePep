@@ -56,6 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // 👇 ADD THIS LINE HERE 👇, This line will hide the index welcom content
         toggleHomeContent(); 
+
+        // ✅ Update canonical after page content is loaded
+        updateCanonical(path);
     }
 
     document.body.addEventListener("click", (e) => {
