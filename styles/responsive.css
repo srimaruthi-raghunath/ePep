@@ -27,6 +27,10 @@
         padding: 10px 5px;
     }
 
+    .content-box {
+        width: 89%;
+    }
+
     .pry {
         font-size: 16px;
         margin: 0 10px;
