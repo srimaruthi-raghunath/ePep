@@ -104,6 +104,25 @@
         text-align: center;
         }
 
+        /* content box */
+        .content-box {
+            width:1200px;
+            margin:20px auto 10px auto;
+            padding:20px 20px;
+            background:white;
+            border-radius:12px;
+            font-size: 0.8em;
+            font-weight: 600;
+            text-align: left;
+            /* font-weight:bold; */
+            /* border: 2px solid #2b2c55; */
+            /* box-shadow: #000000 0px 4px 18px; */
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+            pointer-events: none; /* disable click */
+        }
+
         /* Card's for all epapers icon*/
         .news-card {
             display: inline-block;
@@ -256,10 +275,11 @@
 
        /* Footer CSS */
         footer {
-          background-color: #000000;
+          background-color: #cfcfe4;
+
           text-align: center;
           padding: 20px;
-          border-top: 1px solid #333;
+          /* border-top: 1px solid #b9b9b9; */
           font-size: 14px;
           margin-top: auto;
         }
@@ -269,7 +289,7 @@
         }
         
         .footer-links a {
-          color: #ccc;
+          color: #000000;
           text-decoration: none;
           margin: 0 8px;
         }
