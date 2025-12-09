@@ -2,12 +2,13 @@
 https://www.epep.in/* https://epep.in/:splat 301!
 
 # Clean URLs (no .html in browser)
-/aboutus  /aboutus.html  200
-/privacy  /privacy.html  200
-/terms    /terms.html    200
+# Serve static HTML files for clean paths
+/aboutus    /aboutus.html    200
+/privacy    /privacy.html    200
+/terms      /terms.html      200
 
 # Catch-all: serve index.html for SPA routes
-/*        /index.html     200
+/*    /index.html   200
 
 # Optional: custom 404 page (will only trigger if file truly not found)
-/404      /404.html       404
+/404    /404.html   404
