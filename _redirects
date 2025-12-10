@@ -1,10 +1,5 @@
-# Clean URLs (no .html in browser)
 /aboutus    /aboutus.html    200
 /privacy    /privacy.html    200
 /terms      /terms.html      200
 
-# Catch-all: serve index.html for SPA routes
-/*          /index.html       200
-
-# Optional: custom 404 page
-/404        /404.html         404
+/404        /404.html        404
