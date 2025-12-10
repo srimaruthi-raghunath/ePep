@@ -1,6 +1,3 @@
-# Redirect root domain to www (canonical)
-https://epep.in/*  https://www.epep.in/:splat  301!
-
 # Clean URLs (no .html in browser)
 /aboutus    /aboutus.html    200
 /privacy    /privacy.html    200
