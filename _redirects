@@ -1,5 +1,4 @@
-/aboutus    /aboutus.html    200
-/privacy    /privacy.html    200
-/terms      /terms.html      200
-
-/404        /404.html        404
+/aboutus      /pages/aboutus.html      200
+/privacy      /pages/privacy.html      200
+/terms        /pages/terms.html        200
+/*            /404.html                404
