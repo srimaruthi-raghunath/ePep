@@ -51,7 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const htmlPath = routes[path] || "/pages/404.html";
 
         const res = await fetch(htmlPath);
-        const data = await res.text();
+        let data = await res.text();
+        
+        // Remove header and footer tags to prevent duplication when loaded via SPA router
+        // (pages have their own header/footer for direct visits, but we strip them for SPA navigation)
+        data = data.replace(/<header[^>]*>[\s\S]*?<\/header>/gi, '');
+        data = data.replace(/<footer[^>]*>[\s\S]*?<\/footer>/gi, '');
+        
         document.getElementById("content").innerHTML = data;
 
         // 👇 ADD THIS LINE HERE 👇, This line will hide the index welcom content
