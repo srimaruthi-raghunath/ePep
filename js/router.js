@@ -67,11 +67,23 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCanonical(path);
     }
 
+    // Intercept SPA links (those with data-link) and navigate via the router.
+    // However, treat some routes as standalone pages (full reload) so they are served
+    // as individual pages with their own header/footer (e.g., /aboutus, /privacy, /terms).
+    const standaloneRoutes = new Set(["/aboutus", "/privacy", "/terms"]);
+
     document.body.addEventListener("click", (e) => {
-        if (e.target.matches("a[data-link]")) {
-            e.preventDefault();
-            navigateTo(e.target.getAttribute("href"));
+        if (!e.target.matches("a[data-link]")) return; // ignore non-SPA links
+
+        const href = e.target.getAttribute("href");
+        if (standaloneRoutes.has(href)) {
+            // For standalone routes do a full page navigation (not SPA).
+            return; // let the browser handle the click normally (no preventDefault)
         }
+
+        // SPA navigation for everything else
+        e.preventDefault();
+        navigateTo(href);
     });
 
     window.addEventListener("popstate", route);
