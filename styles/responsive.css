@@ -16,6 +16,25 @@
 
 /* Tablets (portrait and landscape) */
 @media (max-width: 768px) {
+    .title_epep{
+        height: 25px;
+        font-size: 1.8em;
+    }
+
+    footer{
+        height: 30px;
+        font-size: 1.8em;
+    }
+
+    .footer-links {
+        font-size: 13px;
+        height: auto;
+        padding: 6px 0;
+    }
+
+    .footer-copy{
+        font-size: 12px;
+    }
 
     #homeContent {
         font-size: 0.8em;
@@ -36,8 +55,8 @@
         margin: 0 10px;
     }
 
-    .container, .pry {
-        width: 90%;
+    .container, .pry, .apt-content {
+        width: 80%;
     }
 
     .news-card {
