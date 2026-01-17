@@ -2,6 +2,7 @@
         /* General Styles */
         @import 'responsive.css';
         @import 'whatsapp.css';
+        @import 'pop.css';
         html {
         scroll-behavior: smooth;
         background: #f8fafc;

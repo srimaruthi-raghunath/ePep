@@ -163,6 +163,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WJ8FSRMV');</script>
 <!-- End Google Tag Manager -->
+ <script>
+  function closePopup() {
+    document.getElementById("sitePopup").style.display = "none";
+  }
+
+  // Auto-show on page load
+  window.onload = function () {
+    document.getElementById("sitePopup").style.display = "flex";
+  };
+</script>
+
 </head>
 
 <body>
@@ -177,6 +188,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <h1 style="text-align: center; font-size: 1.1em; margin-bottom: 0.2em;">Explore Today’s Indian ePapers & Newspapers by Language and City – ePep.in</h1>
     <p style="text-align:center;margin:0 0 30px 0;font-size:0.8em;">epep.in Serving news readers in Delhi, Bangalore, Chennai, Kolkata, Hyderabad, Mumbai   and every Indian region!</p>
   </div>
+  <!-- Popup Overlay -->
+<div class="popup-overlay" id="sitePopup">
+  <div class="popup-box">
+    <button class="popup-close" onclick="closePopup()">×</button>
+
+    <h2>Hi Dear Visitor 👋</h2>
+    <p>
+      We’re very sorry. Due to low Visitor to the website, we are closing this website.
+    </p>
+    <p class="highlight">
+      Please use <a href="https://dailyepaper.info" target="_blank" style="color: white
+      ;"><strong>dailyepaper.info</strong></a>
+      for daily news.
+    </p>
+    <div style="background: linear-gradient(135deg, #9900ff, #00aaff8f); border-radius: 10px;"><p>If you have any questions, feel free to reach out to us. epep.newspaper@gmail.com</p></div>
+
+    <a href="https://dailyepaper.info" target="_blank" class="popup-btn">
+      Visit DailyEpaper.info
+    </a>
+  </div>
+</div>
 
     <div id="content"></div>
     <footer>

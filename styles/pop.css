@@ -1,0 +1,105 @@
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Popup Box */
+.popup-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+  border-radius: 18px;
+  padding: 32px 28px;
+  width: 90%;
+  max-width: 420px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  position: relative;
+  animation: slideUp 0.5s ease;
+}
+
+/* Heading */
+.popup-box h2 {
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+/* Text */
+.popup-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #eaeaea;
+}
+
+.popup-box .highlight {
+  font-weight: 500;
+}
+
+/* Link */
+.popup-box a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Button */
+.popup-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #00ffd5, #00aaff);
+  color: #000;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.popup-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 255, 213, 0.4);
+}
+
+/* Close Button */
+.popup-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile Tweaks */
+@media (max-width: 480px) {
+  .popup-box {
+    padding: 26px 20px;
+  }
+}
